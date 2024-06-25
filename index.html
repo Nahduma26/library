@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "function.js" defer></script>
+    <link rel='stylesheet' href='styles.css'/>
+</head>
+<body>
+    <!-- https://www.w3schools.com/howto/howto_js_popup_form.asp -->
+    <!-- A button to open the popup form -->
+    <button class="add-button">Add book</button>
+
+    <!-- The form -->
+    <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Add Book</h1>
+
+        <label for="title"><b>Title</b></label>
+        <input type="text" placeholder="Enter book title" name="title" id = "title" required>
+
+        <label for="author"><b>Author</b></label>
+        <input type="text" placeholder="Enter author name" name="author" id = "author" required>
+
+        <label for="pageCount"><b>Number of Pages</b></label>
+        <input type="number" min = "0" placeholder="Enter number of pages" name="pageCount" id = "pageCount" required>
+
+        <label for="readOrNot">Did you read the book?</label>
+
+        <select name="readOrNot" id="readOrNot">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <button type="submit" class="btn" id = "submit">Add</button>
+    </form>
+    </div>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Number of Pages</th>
+            <th>Read</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>1</td>
+            <th>No</th>
+        </tr>
+    </table>
+</body>
+</html>
